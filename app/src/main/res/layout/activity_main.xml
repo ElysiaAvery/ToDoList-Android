@@ -3,18 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guest.todolist.MainActivity">
+    tools:context="com.example.guest.todolist.MainActivity"
+    android:background="@color/accent_material_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:text="shake count"
+        android:textSize="20dp"
+        android:layout_margin="15dp"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Task"
-            android:id="@+id/taskList"
-            android:textSize="20dp"
-            android:layout_margin="10dp"/>
+        android:id="@+id/listView"
+        android:layout_below="@+id/header"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
     </ListView>
+
+
 </RelativeLayout>
